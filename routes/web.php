@@ -25,3 +25,7 @@ Route::get('/multiplicar/{n1}/{n2}', 'MeuControlador@multiplicar');
 Route::get('/nomeId/{id}', 'MeuControlador@getNomeById');
 
 Route::resource('/cliente', 'ClienteController');
+
+Route::get('/pemaza', 'MeuControlador@listar');
+
+Route::post('/pemaza/inserir', 'MeuControlador@inserir');
